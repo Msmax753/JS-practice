@@ -7,10 +7,10 @@
 		<title>JS learning</title>
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
-	<body>SS
+	<body>
 		
 		<!-- ToDo список задач -->
-		<div class="simple-todo">
+		<div class="simple-todo none">
 			<div class="tasks-wrapper">
 				<h2>Список задач</h2>
 				<ul id="todo-list">
@@ -23,6 +23,14 @@
 				<input id="todo-input" type="text" placeholder="Введите название задачи" />
 				<button type="submit">Добавить задачу</button>
 			</form>
+		</div>
+
+		<!-- Таймер setInterval -->
+		<div class="dom-example">
+            <div class="counter" id="counter">0</div>
+            <button role="button" id="start">Старт</button>
+            <button role="button" id="pause">Пауза</button>
+            <button role="button" id="reset">Сброс</button>
 		</div>
 
 		<script src="./js/main.js"></script>

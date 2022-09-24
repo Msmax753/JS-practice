@@ -4,3 +4,17 @@ body {
 }
 
 .none { display: none; }
+
+.simple-todo {
+	margin-top: 40px;
+}
+
+.counter {
+	text-align: center;
+	font-size: 42px;
+	line-height: 80px;
+	border: 1px solid #000;
+	height: 80px;
+	width: 120px;
+	margin-bottom: 20px;
+}

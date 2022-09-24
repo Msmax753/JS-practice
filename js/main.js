@@ -1,4 +1,5 @@
 
+//ToDo-List//
 
 const todoList = document.querySelector('#todo-list');
 const todoForm = document.querySelector('#todo-form');
@@ -34,4 +35,39 @@ function formHandler (event) {
 
     todoInput.focus();
 
+}
+
+
+//Timer//
+
+const counterElement = document.querySelector('#counter');
+let counter = 0;
+let timerID;
+
+
+
+const btnStart = document.querySelector('#start');
+btnStart.onclick = function () {
+
+    timerID = setInterval(function(){
+        counter = counter + 1;
+        //counter++;
+    
+        counterElement.innerText = counter;
+    
+    }, 1000); 
+}
+
+
+const btnPause = document.querySelector('#pause');
+btnPause.onclick = function () {
+    clearInterval (timerID);
+}
+
+
+const btnReset = document.querySelector('#reset');
+btnReset.onclick = function () {
+    counter = 0; 
+    clearInterval (timerID);
+    counterElement.innerText = counter;
 }
